@@ -1,5 +1,5 @@
 :root {
-	--primary-color: rgb(0, 89, 148);
+	--primary-color: #005994;
 	--secondary-color: #044b74;
     --accent-color: #fffcc1;
     --accent-color-2: #01A7C2;
@@ -75,7 +75,7 @@ header nav a:hover {
 }
 
 header nav a:active {
-    color: orange;
+    color: var(--accent-color);
 }
 
 main {
