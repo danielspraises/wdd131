@@ -1,0 +1,46 @@
+/* ===========================
+   LARGE SCREEN OVERRIDES
+   =========================== */
+
+@media (min-width: 768px) {
+
+    /* Hide hamburger button */
+    #menu {
+        display: none;
+    }
+
+
+    /* Header layout refinement */
+    header {
+        padding: 1rem 2rem;
+    }
+
+    /* Navigation displayed horizontally */
+    nav ul {
+        position: static;
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: transparent;
+        width: auto;
+    }
+
+    nav li {
+        margin-left: 1rem;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+    }
+
+    /* MAIN GRID LAYOUT */
+    .figure {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    /* Improve spacing on large screens */
+    main {
+        padding: 2rem;
+    }
+}

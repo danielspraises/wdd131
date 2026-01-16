@@ -1,0 +1,161 @@
+/* ===========================
+   CSS VARIABLES
+   =========================== */
+:root {
+    --primary-color: #005994;
+    --secondary-color: #044b74;
+    --accent-color: #fffcc1;
+    --accent-color-2: #01A7C2;
+    --text-color: #333333;
+    --background-color: #ffffff;
+
+    --header-font: Verdana, Geneva, Tahoma, sans-serif;
+    --body-font: Montserrat, Helvetica, sans-serif;
+}
+
+/* ===========================
+   RESET & BASE
+   =========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.5;
+}
+
+/* ===========================
+   HEADER & NAVIGATION
+   =========================== */
+header {
+    background-color: var(--primary-color);
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    font-family: var(--header-font);
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+/* Hamburger button (mobile only) */
+#menu {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: none;                 /* hidden by default (mobile) */
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+
+nav ul.open {
+    display: flex;
+}
+
+nav li {
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-family: var(--header-font);
+    font-size: 1.1rem;
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+/* ===========================
+   MAIN CONTENT
+   =========================== */
+main {
+    max-width: 1200px;     /* REQUIRED: centered + limited width */
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    margin: 1rem 0;
+    font-family: var(--header-font);
+    font-size: 2rem;
+}
+
+/* ===========================
+   FIGURE GRID (CSS GRID REQUIRED)
+   =========================== */
+.figure {
+    display: grid;
+    grid-template-columns: 1fr;    /* 1 column in mobile view */
+    gap: 1.25rem;
+}
+
+/* Figures */
+figure {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+figure img:hover {
+    transform: scale(1.02);
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: var(--body-font);
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+figcaption:hover {
+    color: var(--accent-color);
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--header-font);
+}
