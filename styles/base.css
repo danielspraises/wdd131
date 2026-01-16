@@ -1,7 +1,8 @@
 :root {
-	--primary-color: rgb(0, 110, 182);
-	--secondary-color: #01A7C2;
-    --accent-color: rgb(182, 163, 0);
+	--primary-color: rgb(0, 89, 148);
+	--secondary-color: #044b74;
+    --accent-color: #fffcc1;
+    --accent-color-2: #01A7C2;
     --text-color: #333333;
     --background-color: #FFFFFF;
     --header-font: 'Verdana, Courier New', Courier, monospace;
@@ -60,16 +61,16 @@ header nav a {
     text-decoration: none;
     /* font-family: var(--header-font); */
     padding: 6px 12px;
-    font-weight: 600;
+    font-weight: 700px;
     font-size: 18px;
-    transition: all 0.3s ease;
+    transition: all ease-in-out 0.3s;
 
 }
 
 header nav a:hover {
-    color: yellow;
-    border: 0.5px solid yellow;
-    border-width: 0px 0px 3px 0px;
+    color: var(--accent-color);
+    border: 0.5px solid var(--accent-color);
+    border-width: 0px 0px 1px 0px;
     border-style: dotted;
 }
 
@@ -148,6 +149,7 @@ main h1 {
     float: right;
     margin: 0 0 10px 15px;
     max-width: 250px;
+    border-radius: 15px;
 }
 
 .about-me::after {
@@ -190,7 +192,7 @@ main h1 {
 }
 
 footer {
-    background-color:var(--primary-color);
+    background-color:var(--secondary-color);
     padding: 10px 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: center;
@@ -199,6 +201,6 @@ footer {
 }
 
 .last-modified {
-    color: yellow;
+    color: var(--accent-color);
     padding: 3px;
 }
