@@ -61,7 +61,7 @@ header nav a {
     text-decoration: none;
     /* font-family: var(--header-font); */
     padding: 6px 12px;
-    font-weight: 700px;
+    font-weight: bold;
     font-size: 18px;
     transition: all ease-in-out 0.3s;
 
