@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Nigeria</title>
+  <meta name="description" content="Country page showcasing Nigeria">
+  <meta name="author" content="Eden PraiseGod Daniel">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+<header>
+  <h1 class="title">Nigeria</h1>
+  <div class="head-title"></div>
+</header>
+
+<main>
+  <!-- HERO IMAGE -->
+   <div class="hero-box">
+    <picture class="hero">
+      <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+      <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+      <img src="images/hero-large.webp" alt="Scenic view of Nigeria" width="1200" height="600">
+    </picture>
+
+    <!-- INFO SECTION -->
+    <section class="info">
+      <h2>Data</h2>
+      <div class="data-info">
+        <ul>
+          <li><span class="label">Area:</span> 923,768 sq km</li>
+          <li><span class="label">Population:</span> 234,579,112</li>
+          <li><span class="label">Capital:</span> Abuja</li>
+          <li><span class="label">Languages:</span> English, Hausa, Yoruba, Igbo, and more</li>
+          <li><span class="label">Time Zone:</span> West Africa Time (WAT) UTC +1</li>
+          <li><span class="label">Calling Code:</span> +234</li>
+          <li><span class="label">Internet TLD:</span> .ng</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- WEATHER SECTION -->
+    <section class="weather">
+      <h2>Weather</h2>
+
+      <!-- Mobile SVG icon -->
+      <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+
+      <div class="data-info weather-data">
+        <ul>
+          <li><span class="label">Temperature:</span> <span id="temp">25</span>°C</li>
+          <li><span class="label">Wind Speed:</span> <span id="wind">10</span> km/h</li>
+          <li><span class="label">Wind Chill:</span> <span id="windchill">N/A</span></li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <p>
+    © <span id="year"></span> | Daniel Praise |
+    Last Modified: <span id="lastModified"></span>
+  </p>
+</footer>
+
+</body>
+</html>
