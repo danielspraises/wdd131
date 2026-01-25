@@ -65,6 +65,9 @@ main {
     position: absolute;
     bottom: 20px;
     right: 10px;
+    margin-top: 2rem;
+    border-top: 2px solid var(--primary-color);
+    padding-top: 1rem;
 }
 
 section{
@@ -80,15 +83,6 @@ section h2 {
     background-color: var(--primary-color);
     padding: 5px 7px;
     color: var(--secondary-color);
-}
-
-/* WEATHER */
-.weather {
-  padding-top: 1rem;
-}
-
-.weather-icon {
-  width: 50px;
 }
 
 /* PSEUDO-ELEMENT for large view weather icon */
@@ -122,6 +116,7 @@ section h2 {
 .weather-icon {
   display: block;
   margin: 0 auto;
+  width: 50px;
 }
 
 
