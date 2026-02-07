@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Confirmation</title>
+  <meta name="description" content="A confirmation page that thanks users for submitting their product review and displays the total number of reviews submitted.">
+  <meta name="author" content="Eden PraiseGod Daniel">
+  <meta name="keywords" content="WDD131, Dynamic Web Fundamentals, Eden PraiseGod Daniel">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+</head>
+<body>
+
+  <header>
+    <h1>Thank You for Your Review!</h1>
+  </header>
+
+  <main class="review-appreciation">
+    <p>Your review has been successfully submitted.</p>
+    <p>Total Reviews Submitted: <span id="reviewCounter"></span></p>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Eden PraiseGod Daniel | Nigeria</p>
+  </footer>
+
+  <script>
+    // Update footer year
+    document.querySelector("#currentYear").textContent = new Date().getFullYear();
+
+    // Track review count in localStorage
+    let count = localStorage.getItem("reviewCount");
+    if (!count) count = 0;
+    count = parseInt(count) + 1;
+    localStorage.setItem("reviewCount", count);
+    document.getElementById("reviewCounter").textContent = count;
+  </script>
+
+</body>
+</html>

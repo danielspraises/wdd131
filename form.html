@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+  <meta name="description" content="A product review form for users to submit their feedback, including ratings, features, and written reviews.">
+  <meta name="author" content="Eden PraiseGod Daniel">
+  <meta name="keywords" content="WDD131, Dynamic Web Fundamentals, Eden PraiseGod Daniel">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+
+  <main>
+    <form id="reviewForm" method="get" action="review.html">
+      
+      <!-- Product Name -->
+      <label for="productSelect">Product Name *</label>
+      <select id="productSelect" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+        <!-- Options populated dynamically -->
+      </select>
+
+      <!-- Overall Rating -->
+      <fieldset>
+        <legend>Overall Rating *</legend>
+        <label><input type="radio" name="rating" id="rating1" value="1" required> 1 ☆</label>
+        <label><input type="radio" name="rating" id="rating2" value="2"> 2 ☆</label>
+        <label><input type="radio" name="rating" id="rating3" value="3"> 3 ☆</label>
+        <label><input type="radio" name="rating" id="rating4" value="4"> 4 ☆</label>
+        <label><input type="radio" name="rating" id="rating5" value="5"> 5 ☆</label>
+      </fieldset>
+
+      <!-- Date of Installation -->
+      <label for="installDate">Date of Installation *</label>
+      <input type="date" id="installDate" name="installDate" required>
+
+      <!-- Useful Features -->
+      <fieldset>
+        <legend>Useful Features</legend>
+        <label><input type="checkbox" id="feature1" name="features" value="Durable"> Durable</label>
+        <label><input type="checkbox" id="feature2" name="features" value="Easy to Use"> Easy to Use</label>
+        <label><input type="checkbox" id="feature3" name="features" value="Energy Efficient"> Energy Efficient</label>
+        <label><input type="checkbox" id="feature4" name="features" value="Affordable"> Affordable</label>
+      </fieldset>
+
+      <!-- Written Review -->
+      <label for="writtenReview">Written Review</label>
+      <textarea id="writtenReview" name="review" rows="5" placeholder="Write your review here..."></textarea>
+
+      <!-- User Name -->
+      <label for="userName">Your Name</label>
+      <input type="text" id="userName" name="userName" placeholder="Optional">
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit Review">
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Eden PraiseGod Daniel | Nigeria</p>
+  </footer>
+</body>
+</html>
