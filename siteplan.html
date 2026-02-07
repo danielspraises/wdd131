@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan – Temple Picture Album</title>
+  <style>
+    /* ===== Color Schema ===== */
+    :root {
+      --primary-color: #006d2c; /* dark green – headings, accents */
+      --secondary-color: #ffffff; /* white – background */
+      --accent-color: #a1d99b; /* light green – highlights/buttons */
+      --text-color: #333333; /* default text */
+    }
+
+    /* ===== Typography ===== */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      margin: 0;
+      padding: 1rem 2rem;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Open Sans', sans-serif;
+      color: var(--primary-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p, li {
+      font-family: 'Roboto', sans-serif;
+      color: var(--text-color);
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .wireframe {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .wireframe div {
+      background-color: var(--accent-color);
+      width: 300px;
+      height: 500px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+
+    .wireframe-mobile div {
+      width: 200px;
+      height: 400px;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid var(--primary-color);
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Website Planning Document</h1>
+
+  <!-- Site Name -->
+  <section>
+    <h2>Site Name</h2>
+    <p><strong>Temple Picture Album</strong></p>
+    <p>This name represents a website showcasing LDS temples around the world with photos, location info, dedication dates, and sizes.</p>
+    <p>Optional domain: temple-album.org</p>
+  </section>
+
+  <hr>
+
+  <!-- Site Purpose -->
+  <section>
+    <h2>Site Purpose</h2>
+    <p>The site provides a hub for exploring LDS temples through an interactive photo album. Users can view temple details, filter temples by age or size, and learn more about their history and locations.</p>
+  </section>
+
+  <hr>
+
+  <!-- Scenarios -->
+  <section>
+    <h2>Scenarios</h2>
+    <ul>
+      <li>Which temples were dedicated after the year 2000?</li>
+      <li>What are the largest temples in terms of area?</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- Color Schema -->
+  <section>
+    <h2>Color Schema</h2>
+    <ul>
+      <li><strong>Primary Color:</strong> Dark Green (#006d2c) – headings, logo, navigation links</li>
+      <li><strong>Secondary Color:</strong> White (#ffffff) – page background, card backgrounds</li>
+      <li><strong>Accent Color:</strong> Light Green (#a1d99b) – highlights, buttons, hover effects</li>
+      <li><strong>Text Color:</strong> Dark Gray (#333333) – paragraph and card text</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- Typography -->
+  <section>
+    <h2>Typography</h2>
+    <ul>
+      <li><strong>Roboto:</strong> body text, paragraphs, list items</li>
+      <li><strong>Open Sans:</strong> headings (H1-H3), logo</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- Wireframes -->
+  <section>
+    <h2>Wireframes</h2>
+
+    <h3>Mobile View</h3>
+    <div class="wireframe wireframe-mobile">
+      <div>Header</div>
+      <div>Filter Nav</div>
+      <div>Temple Cards</div>
+      <div>Footer</div>
+    </div>
+
+    <h3>Desktop View</h3>
+    <div class="wireframe wireframe-desktop">
+      <div>Header</div>
+      <div>Filter Nav + Temple Grid</div>
+      <div>Footer</div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Testing -->
+  <section>
+    <h2>Testing Plan</h2>
+    <ul>
+      <li>Validate HTML and CSS using W3C validators.</li>
+      <li>Check accessibility (color contrast, alt text for images).</li>
+      <li>Check responsiveness on mobile, tablet, and desktop.</li>
+      <li>Audit page performance and SEO basics using Lighthouse or similar tools.</li>
+    </ul>
+  </section>
+
+</body>
+</html>
