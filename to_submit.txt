@@ -1,0 +1,8 @@
+Subject:
+Nigeria Tourist Destinations
+
+Content:
+The website will provide information about popular tourist destinations in Nigeria. It will include brief histories of each location, images, interesting facts, cultural significance, and travel tips. The site will also feature interactive elements such as buttons or menus that allow users to explore different destinations and learn more about each one.
+
+Reason:
+I chose this subject because I am interested in showcasing Nigeria’s culture and natural beauty. It allows me to create an informative and visually engaging website while practicing responsive design, HTML, CSS, and JavaScript skills required for the course.
