@@ -9,11 +9,6 @@
   <meta name="description" content="A product review form for users to submit their feedback, including ratings, features, and written reviews.">
   <meta name="author" content="Eden PraiseGod Daniel">
   <meta name="keywords" content="WDD131, Dynamic Web Fundamentals, Eden PraiseGod Daniel">
-  <link rel="stylesheet" href="styles/form.css">
-  <script src="scripts/form.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
 <body>
@@ -35,11 +30,20 @@
       <!-- Overall Rating -->
       <fieldset>
         <legend>Overall Rating *</legend>
-        <label><input type="radio" name="rating" id="rating1" value="1" required> 1 ☆</label>
-        <label><input type="radio" name="rating" id="rating2" value="2"> 2 ☆</label>
-        <label><input type="radio" name="rating" id="rating3" value="3"> 3 ☆</label>
-        <label><input type="radio" name="rating" id="rating4" value="4"> 4 ☆</label>
-        <label><input type="radio" name="rating" id="rating5" value="5"> 5 ☆</label>
+        <input type="radio" name="rating" id="rating1" value="1" required>
+        <label for="rating1">1 ☆</label>
+
+        <input type="radio" name="rating" id="rating2" value="2" required>
+        <label for="rating2">2 ☆</label>
+
+        <input type="radio" name="rating" id="rating3" value="3" required>
+        <label for="rating3">3 ☆</label>
+
+        <input type="radio" name="rating" id="rating4" value="4" required>
+        <label for="rating4">4 ☆</label>
+
+        <input type="radio" name="rating" id="rating5" value="5" required>
+        <label for="rating5">5 ☆</label>
       </fieldset>
 
       <!-- Date of Installation -->
@@ -47,12 +51,19 @@
       <input type="date" id="installDate" name="installDate" required>
 
       <!-- Useful Features -->
-      <fieldset>
+      <fieldset class="features">
         <legend>Useful Features</legend>
-        <label><input type="checkbox" id="feature1" name="features" value="Durable"> Durable</label>
-        <label><input type="checkbox" id="feature2" name="features" value="Easy to Use"> Easy to Use</label>
-        <label><input type="checkbox" id="feature3" name="features" value="Energy Efficient"> Energy Efficient</label>
-        <label><input type="checkbox" id="feature4" name="features" value="Affordable"> Affordable</label>
+        <input type="checkbox" id="feature1" name="features" value="Durable">
+        <label for="feature1">Durable</label>
+
+        <input type="checkbox" id="feature2" name="features" value="Easy to Use">
+        <label for="feature2">Easy to Use</label>
+
+        <input type="checkbox" id="feature3" name="features" value="Energy Efficient">
+        <label for="feature3">Energy Efficient</label>
+
+        <input type="checkbox" id="feature4" name="features" value="Affordable">
+        <label for="feature4">Affordable</label>
       </fieldset>
 
       <!-- Written Review -->
@@ -72,5 +83,9 @@
   <footer>
     <p>&copy; <span id="currentYear"></span> Eden PraiseGod Daniel | Nigeria</p>
   </footer>
+
+  <script>
+    document.querySelector("#currentYear").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

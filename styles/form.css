@@ -99,6 +99,24 @@ input[type="submit"]:hover {
   background-color: #004d1a;
 }
 
+/* Radio buttons inline labels */
+fieldset input[type="radio"] {
+  margin-right: 0.5rem; /* space between button and label */
+}
+
+fieldset label[for^="rating"], .features label {
+  display: inline-flex;      /* keep label inline with radio */
+  /* align-items: center;       vertically center with radio */
+  margin-right: 1rem;        /* space between options */
+  font-weight: normal;       /* optional: lighter font for radio labels */
+}
+
+fieldset legend {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+
 /* Responsive */
 @media (max-width: 480px) {
   body {

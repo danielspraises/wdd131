@@ -23,23 +23,12 @@
   <main class="review-appreciation">
     <p>Your review has been successfully submitted.</p>
     <p>Total Reviews Submitted: <span id="reviewCounter"></span></p>
+    
   </main>
 
   <footer>
     <p>&copy; <span id="currentYear"></span> Eden PraiseGod Daniel | Nigeria</p>
   </footer>
-
-  <script>
-    // Update footer year
-    document.querySelector("#currentYear").textContent = new Date().getFullYear();
-
-    // Track review count in localStorage
-    let count = localStorage.getItem("reviewCount");
-    if (!count) count = 0;
-    count = parseInt(count) + 1;
-    localStorage.setItem("reviewCount", count);
-    document.getElementById("reviewCounter").textContent = count;
-  </script>
 
 </body>
 </html>
